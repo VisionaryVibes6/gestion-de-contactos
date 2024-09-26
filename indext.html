@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Contactos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Contactos</h1>
+        <div id="auth-section">
+            <h2 id="auth-title">Registro</h2>
+            <input type="text" id="username" placeholder="Nombre de usuario">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button id="auth-btn">Registrar</button>
+            <p id="auth-message"></p>
+        </div>
+        <div id="contact-section" style="display: none;">
+            <h2>Contactos</h2>
+            <input type="text" id="search" placeholder="Buscar contacto" oninput="searchContact()">
+            <input type="text" id="contact-name" placeholder="Nombre del contacto">
+            <input type="text" id="contact-email" placeholder="Email del contacto">
+            <button id="add-contact-btn">Agregar Contacto</button>
+            <ul id="contact-list"></ul>
+            <button id="logout-btn">Cerrar Sesión</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
